@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#26a623"
-        android:text="ver.1.1"
+        android:text="ver.1.1.2"
         android:id="@+id/verText"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -60,5 +60,15 @@
         android:id="@+id/imageButton"
         android:background="@drawable/gaoyunblack"
         android:layout_below="@+id/saveInfo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="GaoYun team"
+        android:id="@+id/textView"
+        android:textColor="#26a623"
+        android:layout_below="@+id/imageButton"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
