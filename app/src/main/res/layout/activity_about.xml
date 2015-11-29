@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#010101"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.android.gaoyun.aesencrypter.AboutActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Android AES Text Encrypter"
+        android:textColor="#26a623"
+        android:id="@+id/aboutText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#26a623"
+        android:text="ver.1.1"
+        android:id="@+id/verText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#26a623"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Based on 128-bit AES algorythm"
+        android:id="@+id/algoInfo"
+        android:layout_below="@+id/aboutText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#26a623"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="File save in directory:
+/sdcard/Documents"
+        android:id="@+id/saveInfo"
+        android:layout_below="@+id/algoInfo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageButton"
+        android:background="@drawable/gaoyunblack"
+        android:layout_below="@+id/saveInfo"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
